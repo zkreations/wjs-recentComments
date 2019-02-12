@@ -1,0 +1,13 @@
+<b:widget id='HTML151' locked='false' title='Recent Comments' type='HTML'>
+   <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[]]></b:widget-setting>
+   </b:widget-settings>
+   <b:includable id='main'>
+      <b:if cond='data:title.length != 0'>
+         <h2><data:title/></h2>
+      </b:if>
+      <div class='widget-content'>
+         <data:content/>
+      </div>
+   </b:includable>
+</b:widget>
