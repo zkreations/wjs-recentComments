@@ -1,6 +1,7 @@
 <b:widget id='HTML151' locked='false' title='Recent Comments' type='HTML'>
    <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id='wjs-recentCmts'></div>
+<script src="//cdn.jsdelivr.net/gh/zkreations/wjs-recentComments@1/dist/js/recent-comments.min.js"></script>]]></b:widget-setting>
    </b:widget-settings>
    <b:includable id='main'>
       <b:if cond='data:title.length != 0'>
