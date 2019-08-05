@@ -1,5 +1,5 @@
 /*!
- * wjs-recentComments v1.0.0
+ * wjs-recentComments v1.1.0
  * Copyright 2019 zkreations
  * Developed by José Gregorio (fb.com/JGMateran) | Daniel Abel M. (fb.com/danieI.abel)
  * Licensed under GNU (github.com/zkreations/wjs-recentComments/blob/master/LICENSE)
