@@ -1,5 +1,5 @@
 /*!
- * wjs-recentComments v1.0.0
+ * wjs-recentComments v1.1.0
  * Copyright 2019 zkreations
  * Developed by José Gregorio (fb.com/JGMateran) | Daniel Abel M. (fb.com/danieI.abel)
  * Licensed under GNU (github.com/zkreations/wjs-recentComments/blob/master/LICENSE)
@@ -7,14 +7,15 @@
    var recentCmts = (function(){
     
    'use strict';
-	   
-   var defaults = {
+   
+   var cmtsId = document.getElementById('wjs-recentCmts'),
+	   defaults = {
 		  homepage: window.location.protocol + '//' + window.location.hostname,
-		  image: '//www.gravatar.com/avatar/?d=mm',
-		  length: 6,
-		  snippet: 50,
 		  imgSize: 's80',
-		  container: document.getElementById('wjs-recentCmts')
+		  container: cmtsId,
+		  image: (cmtsId.dataset.cphoto || '//www.gravatar.com/avatar/?d=mm'), 
+		  length: (cmtsId.dataset.cnumber || 6), 
+		  snippet: (cmtsId.dataset.csnippet || 50)
 	   };
 
    var script = document.createElement( 'script' );
